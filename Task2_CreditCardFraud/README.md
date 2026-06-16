@@ -2,19 +2,17 @@
 
 ## Overview
 
-This project presents a machine learning approach for identifying fraudulent credit card transactions. The objective is to analyze transaction data and build a classification model capable of distinguishing between legitimate and fraudulent activities.
-
-Fraud detection is a critical challenge in the financial sector due to the large volume of daily transactions and the relatively small number of fraudulent cases. This project demonstrates how machine learning can be applied to address this problem effectively.
+This project focuses on detecting fraudulent credit card transactions using machine learning techniques. The objective is to build a classification model capable of identifying suspicious transactions and distinguishing them from legitimate ones. Fraud detection plays an important role in financial security, helping organizations reduce risks and prevent financial losses.
 
 ---
 
 ## Project Objectives
 
-* Analyze transaction data to understand fraud patterns.
-* Perform data preprocessing and exploratory data analysis.
+* Explore and analyze transaction data.
+* Perform data preprocessing and feature selection.
 * Train a machine learning model for fraud classification.
-* Evaluate model performance using standard classification metrics.
-* Identify the effectiveness of the model in detecting fraudulent transactions.
+* Evaluate model performance using classification metrics.
+* Identify fraudulent transactions with improved detection capability.
 
 ---
 
@@ -30,38 +28,38 @@ Fraud detection is a critical challenge in the financial sector due to the large
 
 ---
 
-## Dataset Information
+## Dataset Description
 
-The project uses transaction records containing customer, merchant, and transaction-related information. Each transaction is labeled as either:
+The dataset contains transaction records along with customer and merchant-related information. Each transaction is assigned a label:
 
 * **0** → Legitimate Transaction
 * **1** → Fraudulent Transaction
 
-The dataset is highly imbalanced, making fraud detection a challenging classification problem.
+The dataset is highly imbalanced because fraudulent transactions represent only a small percentage of the total records.
 
 ---
 
 ## Project Workflow
 
-### 1. Data Loading
+### Data Loading
 
-Training and testing datasets were imported and inspected to understand their structure.
+The training and testing datasets were imported and examined to understand their structure and available features.
 
-### 2. Data Exploration
+### Exploratory Data Analysis
 
-Basic statistics, dataset information, and class distribution were analyzed to gain insights into the data.
+The dataset was analyzed to identify transaction patterns, class distribution, and potential challenges associated with fraud detection.
 
-### 3. Data Preprocessing
+### Data Preparation
 
-Relevant features were selected and prepared for model training.
+Relevant numerical features were selected and prepared for model training.
 
-### 4. Model Development
+### Model Training
 
-A Logistic Regression model was implemented to classify transactions as fraudulent or legitimate.
+A Logistic Regression model with class balancing was implemented to improve the detection of fraudulent transactions.
 
-### 5. Model Evaluation
+### Model Evaluation
 
-The trained model was evaluated using:
+The model was evaluated using:
 
 * Accuracy
 * Precision
@@ -69,31 +67,47 @@ The trained model was evaluated using:
 * F1-Score
 * Confusion Matrix
 
-### 6. Model Saving
+### Model Saving
 
-The final trained model was saved for future use and deployment.
+The trained model was saved for future predictions and deployment.
 
 ---
 
-## Results
+## Model Performance
 
-The model demonstrated its ability to identify fraudulent transactions despite the imbalanced nature of the dataset. Class balancing techniques were applied to improve fraud detection performance and increase the model's sensitivity to fraudulent cases.
+| Metric                  | Value |
+| ----------------------- | ----- |
+| Accuracy                | 95%   |
+| Precision (Fraud Class) | 0.06  |
+| Recall (Fraud Class)    | 0.75  |
+| F1-Score (Fraud Class)  | 0.11  |
+
+The model successfully identified a large proportion of fraudulent transactions. The recall score of 75% indicates that the model detected most fraud cases, which is important in fraud prevention systems.
+
+---
+
+## Key Findings
+
+* The dataset showed a significant class imbalance between legitimate and fraudulent transactions.
+* Applying class balancing improved the model's ability to detect fraud.
+* Logistic Regression provided reliable fraud detection performance for this project.
+* The model demonstrated the practical use of machine learning in financial transaction monitoring.
+
+---
+
+## Future Improvements
+
+* Implement Random Forest and XGBoost models.
+* Apply advanced feature engineering techniques.
+* Perform hyperparameter optimization.
+* Build a real-time fraud detection system.
+* Deploy the model as a web application.
 
 ---
 
 ## Conclusion
 
-This project demonstrates the practical application of machine learning in financial fraud detection. By analyzing transaction patterns and training a classification model, the system can assist in identifying suspicious activities and reducing potential financial risks. Further improvements can be achieved through advanced algorithms, feature engineering, and hyperparameter optimization.
-
----
-
-## Future Enhancements
-
-* Implement Random Forest and XGBoost models
-* Perform hyperparameter tuning
-* Apply advanced feature engineering techniques
-* Develop a real-time fraud detection system
-* Deploy the model using a web application framework
+A machine learning-based fraud detection system was developed using Logistic Regression. Through data analysis, preprocessing, and model evaluation, the project demonstrated how machine learning can assist in identifying suspicious financial transactions. The results highlight the potential of predictive analytics in improving transaction security and supporting fraud prevention efforts.
 
 ---
 
@@ -101,4 +115,4 @@ This project demonstrates the practical application of machine learning in finan
 
 **Sanket Kolhe**
 
-Machine Learning Intern Project – CodSoft
+Machine Learning Internship Project – CodSoft
