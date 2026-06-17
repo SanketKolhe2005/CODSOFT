@@ -63,13 +63,14 @@ A **Multinomial Naive Bayes** classifier was trained using the transformed SMS d
 
 ### 5. Model Evaluation
 
-The model was evaluated using:
+The Spam SMS Detection model was evaluated on the test dataset and achieved the following performance:
 
-* Accuracy Score
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
+- Accuracy: **96.68%**
+- Spam Precision: **100%**
+- Spam Recall: **75%**
+- Spam F1-Score: **86%**
+
+The model demonstrated strong performance in identifying spam messages while maintaining a low rate of false positives. These results indicate that TF-IDF vectorization combined with the Multinomial Naive Bayes algorithm is effective for SMS spam classification.
 
 ### 6. Prediction
 
